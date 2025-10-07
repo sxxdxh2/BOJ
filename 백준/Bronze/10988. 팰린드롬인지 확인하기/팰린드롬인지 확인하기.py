@@ -1,10 +1,6 @@
 word = input()
 
-
-for i in range(len(word) // 2):
-
-    if word[i] != word[len(word) - (i + 1)]:
-        print(0)
-        break
-else:
+if word == word[::-1]:
     print(1)
+else:
+    print(0)
